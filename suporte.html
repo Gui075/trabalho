@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos de animação para o título principal */
+        .support h1 {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: slideIn 1s forwards;
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animação para o parágrafo da seção de suporte */
+        .support p {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeIn 1s forwards 0.5s; /* Delay para o parágrafo */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilo e animação para as opções de suporte */
+        .support-item {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeIn 1s forwards;
+            margin: 20px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .support-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Sequência de animação para as opções de suporte */
+        .support-item:nth-child(1) {
+            animation-delay: 1s; /* Delay para a primeira opção */
+        }
+        .support-item:nth-child(2) {
+            animation-delay: 1.5s; /* Delay para a segunda opção */
+        }
+        .support-item:nth-child(3) {
+            animation-delay: 2s; /* Delay para a terceira opção */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="servicos.html">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="consultoria.html">Consultoria</a></li>
+                        <li><a href="suporte.html">Suporte</a></li>
+                        <li><a href="#">Desenvolvimento</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="support">
+            <h1>Suporte Técnico</h1>
+            <p>Estamos aqui para ajudar! Veja abaixo as opções de suporte disponíveis:</p>
+            <div class="support-options">
+                <div class="support-item">
+                    <h2>Suporte 24/7</h2>
+                    <p>Oferecemos assistência técnica 24 horas por dia, 7 dias por semana. Entre em contato a qualquer momento.</p>
+                </div>
+                <div class="support-item">
+                    <h2>Central de Ajuda</h2>
+                    <p>Acesse nossa Central de Ajuda para FAQs, tutoriais e guias de solução de problemas.</p>
+                </div>
+                <div class="support-item">
+                    <h2>Chat ao Vivo</h2>
+                    <p>Fale diretamente com um de nossos especialistas através do chat ao vivo em nosso site.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
